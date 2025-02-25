@@ -12,7 +12,7 @@ export class RegistrationComponent {
   
   form: FormGroup;
 
-  constructor(public formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder) {
     this.form = this.formBuilder.group({
       fullName: [''],
       lastName: [''],
